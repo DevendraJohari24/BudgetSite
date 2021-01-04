@@ -1,0 +1,52 @@
+body { 
+        margin: 0; 
+        
+} 
+  
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 5px; 
+    position: absolute; 
+    overflow: hidden; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    width: 100%; 
+} 
+#banner_image{
+    background-image: url(../image/alex-vidal.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner_content{
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 90%;
+    color: white;
+    border-radius: 5px;
+}
+
+footer{
+    padding: 10px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-Dec-2020, 5:04:47 pm
+    Author     : devjo
+*/
+
