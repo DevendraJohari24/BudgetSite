@@ -4,7 +4,9 @@
  {
      header('location: login.php'); 
  }
-   
+   $date_query = "SELECT from_date,to_date FROM budget_plans WHERE user_id='$user_id' AND id='$plan_id'";
+   $date_query_result = mysqli_query($con, $date_query) or die(mysqli_error($con));
+   $row_date = mysqli_fetch_array($date_query_result)
 ?>
 <div class="panel-group" >
              <div class="panel panel-default">
@@ -23,7 +25,7 @@
                      <div class="form-group">
                        <div class="col-md-12">
                          <label for="validationServer01">Date</label>
-                         <input type="date" class="form-control is-valid" placeholder="dd-mm-yyyy" id="validationServer01" required name="date_of">
+                         <input type="date" class="form-control is-valid" placeholder="dd-mm-yyyy" id="validationServer01" required name="date_of" min="<?php echo $row_date['from_date']  ?>" max="<?php echo $row_date['to_date']  ?>" >
                        </div>
                      </div>
                     <div class="form-group">

@@ -43,11 +43,11 @@
                      <div class="form-group">
                        <div class="col-md-6">
                          <label for="validationServer01">From</label>
-                         <input type="date" class="form-control is-valid" placeholder="dd/mm/yyyy" id="validationServer01" required name="from_date">
+                         <input type="date" class="form-control is-valid" placeholder="dd/mm/yyyy" id="validationServer01" required name="from_date" max="<?php echo date("Y-m-d") ?>">
                        </div>
                        <div class="col-md-6">
                          <label for="validationServer01">To</label>
-                         <input type="date" class="form-control is-valid" placeholder="dd/mm/yyyy" id="validationServer01" required name="to_date">
+                         <input type="date" class="form-control is-valid" placeholder="dd/mm/yyyy" id="validationServer01" required name="to_date" min="<?php echo date("Y-m-d") ?>">
                        </div>
                      </div>
                      <div class="form-group">
@@ -85,6 +85,7 @@
             
             
         </div>
+        <div style="margin-bottom: 15%"></div>
         <?php
         include 'include/footer.php';
         ?>

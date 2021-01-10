@@ -132,8 +132,9 @@
                     </div>
             </div>
          </div>
-        <div style="margin-bottom: 30%"></div>
+        
         <?php } ?>
+        <div style="margin-bottom: 25%"></div>
         <?php
         include 'include/footer.php';
         ?>

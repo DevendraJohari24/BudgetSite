@@ -40,20 +40,14 @@
                        <div class="col-md-12">
                          <label for="validationServer01">Email:</label>
                          <input type="email" class="form-control is-valid" placeholder="Email" id="validationServer01" required name="email">
-                       <div><?php 
-                        error_reporting(0); 
-                        echo $_GET['error']; 
-                        ?></div>
+                       
                        </div>
                      </div>
                     <div class="form-group">
                        <div class="col-md-12">
                          <label for="validationServer01">Password:</label>
                          <input type="password" class="form-control is-valid" placeholder="Password" id="validationServer01" required name="password"><!-- comment -->
-                       <div><?php 
-                        error_reporting(0); 
-                        echo $_GET['error']; 
-                        ?></div>
+                      
                        </div>
                      </div>
                         <button class="btn btn-primary" style="width: 100%" type="submit">Login</button>

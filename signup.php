@@ -64,7 +64,7 @@
                      <div class="form-group">
                        <div class="col-md-12">
                          <label for="validationServer01">Phone No:</label>
-                         <input type="number" class="form-control is-valid" placeholder="Enter Valid Phone Number (Ex 9795433934)" id="validationServer01" required name="contact">
+                         <input type="tel" class="form-control is-valid" placeholder="Enter Valid Phone Number (Ex 9795433934)" id="validationServer01" required name="contact">
                        <div><?php 
                         error_reporting(0); 
                         echo $_GET['contact_error']; 
