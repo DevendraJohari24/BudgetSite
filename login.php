@@ -40,7 +40,6 @@
                        <div class="col-md-12">
                          <label for="validationServer01">Email:</label>
                          <input type="email" class="form-control is-valid" placeholder="Email" id="validationServer01" required name="email">
-                       
                        </div>
                      </div>
                     <div class="form-group">
